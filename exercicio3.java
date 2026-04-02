@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class exercicio3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        // Se o resto da divisão por 2 for zero, o número é par
+        if (numero % 2 == 0) {
+            System.out.println("O número " + numero + " é PAR.");
+        } else {
+            System.out.println("O número " + numero + " é ÍMPAR.");
+        }
+
+        scanner.close();
+    }
+}
